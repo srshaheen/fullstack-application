@@ -1,3 +1,7 @@
 mern-crash-course/node_modules
 mern-crash-course/frontend/node_modules
 mern-crash-cour/.env
+
+netflix-clone/node_modules
+netflix-clone/frontend/node_modules
+netflix-clone/.env
