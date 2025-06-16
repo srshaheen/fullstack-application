@@ -101,3 +101,12 @@ export async function logout(req, res) {
     res.status(500).json({ success: false, message: "Internal server error" });
   }
 }
+
+export async function authCheck(req, res) {
+  try {
+    res.status(200).json({ success: true, user: req.user });
+  } catch (err) {
+    console.log("Error in auth check controller");
+    res.status(500).json({ success: false, message: "Internal server error" });
+  }
+}
